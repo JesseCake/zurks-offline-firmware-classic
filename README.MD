@@ -1,6 +1,6 @@
 # Zurk's Offline Firmware 
-#### version 34.0
-
+#### version 34.1
+This is a fork currently of the work of "phineasthecat" work here on github that I found had quite some bugs. Either I'll merge the changes I'm making here with their project, or I'll continue this fork (in case their account is dead).
 
 ## License
 
@@ -19,7 +19,7 @@ This is Zurk's Offline Firmware v34, backported to the Chumby Classic.
 
 ## Usage
 
-* Copy to a blank USB thumbdrive (FAT32 formatted, 2GB or greater, root folder, make sure you keep directory structure) - power off your activated, networked, functional chumby - insert thumbdrive - power on. Wait for the voice prompts (3-5 min) and when it reboots remove the USB thumbdrive. The first boot after install will take a while (1-2 min without swapfile.on, up to !half an hour! with swapfile.on), the next ones are much faster. If upgrading with an on board firmware already on the Chumby the procedure is the same. The loader will detect the earlier install and upgrade it automatically. 
+* Copy to a blank USB thumbdrive (FAT32 formatted, 2GB or greater, root folder, make sure you keep directory structure) - power off your activated, networked, functional chumby - insert thumbdrive - power on. Wait for the voice prompts (3-5 min) and when it reboots remove the USB thumbdrive. The first boot after install will take a while (1-2 min without swapfile.on, up to !half an hour or more! with swapfile.on), the next ones are much faster. If upgrading with an on board firmware already on the Chumby the procedure is the same. The loader will detect the earlier install and upgrade it automatically. 
 
 * You will need to change the control panel time to your correct location after bootup. Also change the brightness and sound to your preference. 
 
@@ -30,7 +30,7 @@ This is Zurk's Offline Firmware v34, backported to the Chumby Classic.
 
 ## USB disk problems
 
-The installation checks the files on the USB disk before installing to your chumby. If the files have issues such as data corruption etc the install will stop. Please replace the USB disk and try a new one or reformat the USB disk and retry it.
+The installation checks the files on the USB disk before installing to your chumby. If the files have issues such as data corruption etc the install will stop. Please replace the USB disk and try a new one or reformat the USB disk and retry it. USE A FAST USB Drive of high quality. This firmware runs from the USB.
 
 
 ## Help
@@ -92,6 +92,8 @@ Only obsolete guides are currently available. Documentation will be included as 
 
 
 ## Changelog
+
+* v34.1 - Forked this project from "phineasthecat" and made modifications to the "debugchumby" script to work with swap files, created an "on.sh" script to remotely turn the screen on, as well as created the "tmp" folder necessary for functioning
 
 * v34- Added default channel setting on boot in Widget Editor. 
 
